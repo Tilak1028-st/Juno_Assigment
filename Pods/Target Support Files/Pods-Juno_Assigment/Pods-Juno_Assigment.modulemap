@@ -1,0 +1,6 @@
+framework module Pods_Juno_Assigment {
+  umbrella header "Pods-Juno_Assigment-umbrella.h"
+
+  export *
+  module * { export * }
+}

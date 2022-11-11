@@ -7,7 +7,7 @@
 
 import Foundation
 struct CryptoPrices: Codable {
-    let logo : String?
-    let title : String?
-    let current_price_in_usd : String?
+    var logo : String?
+    var title : String?
+    var current_price_in_usd : String?
 }

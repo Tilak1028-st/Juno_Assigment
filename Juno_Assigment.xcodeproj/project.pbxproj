@@ -22,6 +22,13 @@
 		82CBFD4E291EC8EA008B535B /* YourCryptoHoldings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD4D291EC8EA008B535B /* YourCryptoHoldings.swift */; };
 		82CBFD50291EC920008B535B /* CryptoPrices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD4F291EC920008B535B /* CryptoPrices.swift */; };
 		82CBFD52291EC961008B535B /* AllTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD51291EC961008B535B /* AllTransactions.swift */; };
+		82CBFD56291ECDEF008B535B /* CryptoNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD55291ECDEF008B535B /* CryptoNetworking.swift */; };
+		82CBFD59291ED25A008B535B /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD58291ED25A008B535B /* MainScreenViewModel.swift */; };
+		82CBFD5D291ED822008B535B /* MainScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD5B291ED822008B535B /* MainScreenTableViewCell.swift */; };
+		82CBFD5E291ED822008B535B /* MainScreenTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82CBFD5C291ED822008B535B /* MainScreenTableViewCell.xib */; };
+		857E53331515B2A3900BC057 /* Pods_Juno_AssigmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC7901923194823003BA1E3 /* Pods_Juno_AssigmentTests.framework */; };
+		944DEF67DB73F897240F3741 /* Pods_Juno_Assigment_Juno_AssigmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE47BDAFF478C01A645C22A2 /* Pods_Juno_Assigment_Juno_AssigmentUITests.framework */; };
+		E928D4190540580F717665B2 /* Pods_Juno_Assigment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C499BC7DD0111290F9D6FFCB /* Pods_Juno_Assigment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DC7901923194823003BA1E3 /* Pods_Juno_AssigmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juno_AssigmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E08EE8CAD28A010DDA55492 /* Pods-Juno_Assigment-Juno_AssigmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juno_Assigment-Juno_AssigmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Juno_Assigment-Juno_AssigmentUITests/Pods-Juno_Assigment-Juno_AssigmentUITests.release.xcconfig"; sourceTree = "<group>"; };
 		82CBFD10291EC25F008B535B /* Juno_Assigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juno_Assigment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CBFD13291EC25F008B535B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82CBFD15291EC25F008B535B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +70,17 @@
 		82CBFD4D291EC8EA008B535B /* YourCryptoHoldings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCryptoHoldings.swift; sourceTree = "<group>"; };
 		82CBFD4F291EC920008B535B /* CryptoPrices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPrices.swift; sourceTree = "<group>"; };
 		82CBFD51291EC961008B535B /* AllTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactions.swift; sourceTree = "<group>"; };
+		82CBFD55291ECDEF008B535B /* CryptoNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoNetworking.swift; sourceTree = "<group>"; };
+		82CBFD58291ED25A008B535B /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		82CBFD5B291ED822008B535B /* MainScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenTableViewCell.swift; sourceTree = "<group>"; };
+		82CBFD5C291ED822008B535B /* MainScreenTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenTableViewCell.xib; sourceTree = "<group>"; };
+		857E5044BEE82518ACE231CC /* Pods-Juno_AssigmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juno_AssigmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Juno_AssigmentTests/Pods-Juno_AssigmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E8821FBAB2787DB13D91A25 /* Pods-Juno_Assigment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juno_Assigment.debug.xcconfig"; path = "Target Support Files/Pods-Juno_Assigment/Pods-Juno_Assigment.debug.xcconfig"; sourceTree = "<group>"; };
+		98B6D647B657890E8A12D7FB /* Pods-Juno_AssigmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juno_AssigmentTests.release.xcconfig"; path = "Target Support Files/Pods-Juno_AssigmentTests/Pods-Juno_AssigmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		A93C655169C94D0BE1AC3521 /* Pods-Juno_Assigment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juno_Assigment.release.xcconfig"; path = "Target Support Files/Pods-Juno_Assigment/Pods-Juno_Assigment.release.xcconfig"; sourceTree = "<group>"; };
+		BE47BDAFF478C01A645C22A2 /* Pods_Juno_Assigment_Juno_AssigmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juno_Assigment_Juno_AssigmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C499BC7DD0111290F9D6FFCB /* Pods_Juno_Assigment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juno_Assigment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88B4BC3C2C58355CEBE3008 /* Pods-Juno_Assigment-Juno_AssigmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juno_Assigment-Juno_AssigmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Juno_Assigment-Juno_AssigmentUITests/Pods-Juno_Assigment-Juno_AssigmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E928D4190540580F717665B2 /* Pods_Juno_Assigment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				857E53331515B2A3900BC057 /* Pods_Juno_AssigmentTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				944DEF67DB73F897240F3741 /* Pods_Juno_Assigment_Juno_AssigmentUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		611BAF15FADE0D42A450A7DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C499BC7DD0111290F9D6FFCB /* Pods_Juno_Assigment.framework */,
+				BE47BDAFF478C01A645C22A2 /* Pods_Juno_Assigment_Juno_AssigmentUITests.framework */,
+				4DC7901923194823003BA1E3 /* Pods_Juno_AssigmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		82CBFD07291EC25F008B535B = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +128,8 @@
 				82CBFD29291EC261008B535B /* Juno_AssigmentTests */,
 				82CBFD33291EC261008B535B /* Juno_AssigmentUITests */,
 				82CBFD11291EC25F008B535B /* Products */,
+				9357AE3E5FFE549F2991873F /* Pods */,
+				611BAF15FADE0D42A450A7DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,7 +149,9 @@
 				82CBFD13291EC25F008B535B /* AppDelegate.swift */,
 				82CBFD15291EC25F008B535B /* SceneDelegate.swift */,
 				82CBFD45291EC451008B535B /* Model */,
+				82CBFD57291ED239008B535B /* ViewModel */,
 				82CBFD43291EC3E3008B535B /* View Controllers */,
+				82CBFD5A291ED7F0008B535B /* Cells */,
 				82CBFD44291EC414008B535B /* Storyboards */,
 				82CBFD1C291EC260008B535B /* Assets.xcassets */,
 				82CBFD21291EC261008B535B /* Info.plist */,
@@ -161,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				82CBFD53291ECA07008B535B /* Crypto */,
+				82CBFD54291ECDD3008B535B /* Networking */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -177,6 +215,44 @@
 			path = Crypto;
 			sourceTree = "<group>";
 		};
+		82CBFD54291ECDD3008B535B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				82CBFD55291ECDEF008B535B /* CryptoNetworking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		82CBFD57291ED239008B535B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				82CBFD58291ED25A008B535B /* MainScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		82CBFD5A291ED7F0008B535B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				82CBFD5B291ED822008B535B /* MainScreenTableViewCell.swift */,
+				82CBFD5C291ED822008B535B /* MainScreenTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9357AE3E5FFE549F2991873F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E8821FBAB2787DB13D91A25 /* Pods-Juno_Assigment.debug.xcconfig */,
+				A93C655169C94D0BE1AC3521 /* Pods-Juno_Assigment.release.xcconfig */,
+				E88B4BC3C2C58355CEBE3008 /* Pods-Juno_Assigment-Juno_AssigmentUITests.debug.xcconfig */,
+				7E08EE8CAD28A010DDA55492 /* Pods-Juno_Assigment-Juno_AssigmentUITests.release.xcconfig */,
+				857E5044BEE82518ACE231CC /* Pods-Juno_AssigmentTests.debug.xcconfig */,
+				98B6D647B657890E8A12D7FB /* Pods-Juno_AssigmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82CBFD3A291EC261008B535B /* Build configuration list for PBXNativeTarget "Juno_Assigment" */;
 			buildPhases = (
+				3247B3012E4136F0A5D9FE05 /* [CP] Check Pods Manifest.lock */,
 				82CBFD0C291EC25F008B535B /* Sources */,
 				82CBFD0D291EC25F008B535B /* Frameworks */,
 				82CBFD0E291EC25F008B535B /* Resources */,
+				B213443173412117560DAC48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +279,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82CBFD3D291EC261008B535B /* Build configuration list for PBXNativeTarget "Juno_AssigmentTests" */;
 			buildPhases = (
+				5B0418F33938625B847B3FF7 /* [CP] Check Pods Manifest.lock */,
 				82CBFD22291EC261008B535B /* Sources */,
 				82CBFD23291EC261008B535B /* Frameworks */,
 				82CBFD24291EC261008B535B /* Resources */,
@@ -219,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82CBFD40291EC261008B535B /* Build configuration list for PBXNativeTarget "Juno_AssigmentUITests" */;
 			buildPhases = (
+				49A066822F1C6D47C8C0D590 /* [CP] Check Pods Manifest.lock */,
 				82CBFD2C291EC261008B535B /* Sources */,
 				82CBFD2D291EC261008B535B /* Frameworks */,
 				82CBFD2E291EC261008B535B /* Resources */,
+				EA511F466FBA180023D41289 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82CBFD5E291ED822008B535B /* MainScreenTableViewCell.xib in Resources */,
 				82CBFD20291EC260008B535B /* LaunchScreen.storyboard in Resources */,
 				82CBFD1D291EC260008B535B /* Assets.xcassets in Resources */,
 				82CBFD1B291EC25F008B535B /* Main.storyboard in Resources */,
@@ -303,19 +385,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3247B3012E4136F0A5D9FE05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Juno_Assigment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49A066822F1C6D47C8C0D590 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Juno_Assigment-Juno_AssigmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B0418F33938625B847B3FF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Juno_AssigmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B213443173412117560DAC48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Juno_Assigment/Pods-Juno_Assigment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Juno_Assigment/Pods-Juno_Assigment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Juno_Assigment/Pods-Juno_Assigment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA511F466FBA180023D41289 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Juno_Assigment-Juno_AssigmentUITests/Pods-Juno_Assigment-Juno_AssigmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Juno_Assigment-Juno_AssigmentUITests/Pods-Juno_Assigment-Juno_AssigmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Juno_Assigment-Juno_AssigmentUITests/Pods-Juno_Assigment-Juno_AssigmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		82CBFD0C291EC25F008B535B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				82CBFD4B291EC884008B535B /* Crypto.swift in Sources */,
+				82CBFD59291ED25A008B535B /* MainScreenViewModel.swift in Sources */,
 				82CBFD52291EC961008B535B /* AllTransactions.swift in Sources */,
 				82CBFD4E291EC8EA008B535B /* YourCryptoHoldings.swift in Sources */,
 				82CBFD18291EC25F008B535B /* MainScreenViewController.swift in Sources */,
 				82CBFD14291EC25F008B535B /* AppDelegate.swift in Sources */,
 				82CBFD50291EC920008B535B /* CryptoPrices.swift in Sources */,
 				82CBFD47291EC4D0008B535B /* DetailScreenViewController.swift in Sources */,
+				82CBFD5D291ED822008B535B /* MainScreenTableViewCell.swift in Sources */,
 				82CBFD49291EC81F008B535B /* CryptoBalance.swift in Sources */,
+				82CBFD56291ECDEF008B535B /* CryptoNetworking.swift in Sources */,
 				82CBFD16291EC25F008B535B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +678,7 @@
 		};
 		82CBFD3B291EC261008B535B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E8821FBAB2787DB13D91A25 /* Pods-Juno_Assigment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -517,6 +706,7 @@
 		};
 		82CBFD3C291EC261008B535B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A93C655169C94D0BE1AC3521 /* Pods-Juno_Assigment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -544,6 +734,7 @@
 		};
 		82CBFD3E291EC261008B535B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 857E5044BEE82518ACE231CC /* Pods-Juno_AssigmentTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -568,6 +759,7 @@
 		};
 		82CBFD3F291EC261008B535B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98B6D647B657890E8A12D7FB /* Pods-Juno_AssigmentTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -592,6 +784,7 @@
 		};
 		82CBFD41291EC261008B535B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E88B4BC3C2C58355CEBE3008 /* Pods-Juno_Assigment-Juno_AssigmentUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -614,6 +807,7 @@
 		};
 		82CBFD42291EC261008B535B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E08EE8CAD28A010DDA55492 /* Pods-Juno_Assigment-Juno_AssigmentUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_Juno_Assigment_Juno_AssigmentUITests {
+  umbrella header "Pods-Juno_Assigment-Juno_AssigmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
