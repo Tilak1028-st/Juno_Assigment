@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		82CBFD14291EC25F008B535B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD13291EC25F008B535B /* AppDelegate.swift */; };
 		82CBFD16291EC25F008B535B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD15291EC25F008B535B /* SceneDelegate.swift */; };
-		82CBFD18291EC25F008B535B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD17291EC25F008B535B /* ViewController.swift */; };
+		82CBFD18291EC25F008B535B /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD17291EC25F008B535B /* MainScreenViewController.swift */; };
 		82CBFD1B291EC25F008B535B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CBFD19291EC25F008B535B /* Main.storyboard */; };
 		82CBFD1D291EC260008B535B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CBFD1C291EC260008B535B /* Assets.xcassets */; };
 		82CBFD20291EC260008B535B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CBFD1E291EC260008B535B /* LaunchScreen.storyboard */; };
 		82CBFD2B291EC261008B535B /* Juno_AssigmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD2A291EC261008B535B /* Juno_AssigmentTests.swift */; };
 		82CBFD35291EC261008B535B /* Juno_AssigmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD34291EC261008B535B /* Juno_AssigmentUITests.swift */; };
 		82CBFD37291EC261008B535B /* Juno_AssigmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD36291EC261008B535B /* Juno_AssigmentUITestsLaunchTests.swift */; };
+		82CBFD47291EC4D0008B535B /* DetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD46291EC4D0008B535B /* DetailScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		82CBFD10291EC25F008B535B /* Juno_Assigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juno_Assigment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CBFD13291EC25F008B535B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82CBFD15291EC25F008B535B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		82CBFD17291EC25F008B535B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		82CBFD17291EC25F008B535B /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		82CBFD1A291EC25F008B535B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		82CBFD1C291EC260008B535B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82CBFD1F291EC260008B535B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		82CBFD30291EC261008B535B /* Juno_AssigmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Juno_AssigmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CBFD34291EC261008B535B /* Juno_AssigmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juno_AssigmentUITests.swift; sourceTree = "<group>"; };
 		82CBFD36291EC261008B535B /* Juno_AssigmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juno_AssigmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82CBFD46291EC4D0008B535B /* DetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,10 @@
 			children = (
 				82CBFD13291EC25F008B535B /* AppDelegate.swift */,
 				82CBFD15291EC25F008B535B /* SceneDelegate.swift */,
-				82CBFD17291EC25F008B535B /* ViewController.swift */,
-				82CBFD19291EC25F008B535B /* Main.storyboard */,
+				82CBFD45291EC451008B535B /* Model */,
+				82CBFD43291EC3E3008B535B /* View Controllers */,
+				82CBFD44291EC414008B535B /* Storyboards */,
 				82CBFD1C291EC260008B535B /* Assets.xcassets */,
-				82CBFD1E291EC260008B535B /* LaunchScreen.storyboard */,
 				82CBFD21291EC261008B535B /* Info.plist */,
 			);
 			path = Juno_Assigment;
@@ -125,6 +127,31 @@
 				82CBFD36291EC261008B535B /* Juno_AssigmentUITestsLaunchTests.swift */,
 			);
 			path = Juno_AssigmentUITests;
+			sourceTree = "<group>";
+		};
+		82CBFD43291EC3E3008B535B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				82CBFD17291EC25F008B535B /* MainScreenViewController.swift */,
+				82CBFD46291EC4D0008B535B /* DetailScreenViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		82CBFD44291EC414008B535B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				82CBFD1E291EC260008B535B /* LaunchScreen.storyboard */,
+				82CBFD19291EC25F008B535B /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		82CBFD45291EC451008B535B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82CBFD18291EC25F008B535B /* ViewController.swift in Sources */,
+				82CBFD18291EC25F008B535B /* MainScreenViewController.swift in Sources */,
 				82CBFD14291EC25F008B535B /* AppDelegate.swift in Sources */,
+				82CBFD47291EC4D0008B535B /* DetailScreenViewController.swift in Sources */,
 				82CBFD16291EC25F008B535B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
