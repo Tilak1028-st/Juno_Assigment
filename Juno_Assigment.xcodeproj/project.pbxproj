@@ -17,6 +17,11 @@
 		82CBFD35291EC261008B535B /* Juno_AssigmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD34291EC261008B535B /* Juno_AssigmentUITests.swift */; };
 		82CBFD37291EC261008B535B /* Juno_AssigmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD36291EC261008B535B /* Juno_AssigmentUITestsLaunchTests.swift */; };
 		82CBFD47291EC4D0008B535B /* DetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD46291EC4D0008B535B /* DetailScreenViewController.swift */; };
+		82CBFD49291EC81F008B535B /* CryptoBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD48291EC81F008B535B /* CryptoBalance.swift */; };
+		82CBFD4B291EC884008B535B /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD4A291EC884008B535B /* Crypto.swift */; };
+		82CBFD4E291EC8EA008B535B /* YourCryptoHoldings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD4D291EC8EA008B535B /* YourCryptoHoldings.swift */; };
+		82CBFD50291EC920008B535B /* CryptoPrices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD4F291EC920008B535B /* CryptoPrices.swift */; };
+		82CBFD52291EC961008B535B /* AllTransactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD51291EC961008B535B /* AllTransactions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		82CBFD34291EC261008B535B /* Juno_AssigmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juno_AssigmentUITests.swift; sourceTree = "<group>"; };
 		82CBFD36291EC261008B535B /* Juno_AssigmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juno_AssigmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		82CBFD46291EC4D0008B535B /* DetailScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreenViewController.swift; sourceTree = "<group>"; };
+		82CBFD48291EC81F008B535B /* CryptoBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoBalance.swift; sourceTree = "<group>"; };
+		82CBFD4A291EC884008B535B /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		82CBFD4D291EC8EA008B535B /* YourCryptoHoldings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourCryptoHoldings.swift; sourceTree = "<group>"; };
+		82CBFD4F291EC920008B535B /* CryptoPrices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoPrices.swift; sourceTree = "<group>"; };
+		82CBFD51291EC961008B535B /* AllTransactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTransactions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,8 +160,21 @@
 		82CBFD45291EC451008B535B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				82CBFD53291ECA07008B535B /* Crypto */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		82CBFD53291ECA07008B535B /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				82CBFD4A291EC884008B535B /* Crypto.swift */,
+				82CBFD48291EC81F008B535B /* CryptoBalance.swift */,
+				82CBFD4D291EC8EA008B535B /* YourCryptoHoldings.swift */,
+				82CBFD4F291EC920008B535B /* CryptoPrices.swift */,
+				82CBFD51291EC961008B535B /* AllTransactions.swift */,
+			);
+			path = Crypto;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,9 +308,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82CBFD4B291EC884008B535B /* Crypto.swift in Sources */,
+				82CBFD52291EC961008B535B /* AllTransactions.swift in Sources */,
+				82CBFD4E291EC8EA008B535B /* YourCryptoHoldings.swift in Sources */,
 				82CBFD18291EC25F008B535B /* MainScreenViewController.swift in Sources */,
 				82CBFD14291EC25F008B535B /* AppDelegate.swift in Sources */,
+				82CBFD50291EC920008B535B /* CryptoPrices.swift in Sources */,
 				82CBFD47291EC4D0008B535B /* DetailScreenViewController.swift in Sources */,
+				82CBFD49291EC81F008B535B /* CryptoBalance.swift in Sources */,
 				82CBFD16291EC25F008B535B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
