@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double SVGParserVersionNumber;
-FOUNDATION_EXPORT const unsigned char SVGParserVersionString[];
+FOUNDATION_EXPORT double SwiftChartVersionNumber;
+FOUNDATION_EXPORT const unsigned char SwiftChartVersionString[];
 

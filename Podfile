@@ -11,7 +11,7 @@ pod 'Alamofire', '~> 5.5'
 pod 'SVProgressHUD'
 pod 'SwiftyJSON'
 pod 'SVGKit'
-pod 'SVGParser'
+pod 'SwiftChart', '~> 1.0'
 
   target 'Juno_AssigmentTests' do
     inherit! :search_paths

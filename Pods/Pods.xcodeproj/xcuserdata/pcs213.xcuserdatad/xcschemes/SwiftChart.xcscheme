@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "42BA04D7BF51F8AB7BA3303001446B4D"
-               BuildableName = "SVGParser.framework"
-               BlueprintName = "SVGParser"
+               BlueprintIdentifier = "4E7BD5B8067AD0B7AFB7967E30BF1BB8"
+               BuildableName = "SwiftChart.framework"
+               BlueprintName = "SwiftChart"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

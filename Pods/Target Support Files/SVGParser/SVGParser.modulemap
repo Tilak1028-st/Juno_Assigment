@@ -1,6 +1,0 @@
-framework module SVGParser {
-  umbrella header "SVGParser-umbrella.h"
-
-  export *
-  module * { export * }
-}
