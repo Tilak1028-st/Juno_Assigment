@@ -12,6 +12,7 @@ pod 'SVProgressHUD'
 pod 'SwiftyJSON'
 pod 'SVGKit'
 pod 'SwiftChart', '~> 1.0'
+pod 'SDWebImageSVGCoder'
 
   target 'Juno_AssigmentTests' do
     inherit! :search_paths

@@ -3,6 +3,9 @@ PODS:
   - CocoaLumberjack (3.7.4):
     - CocoaLumberjack/Core (= 3.7.4)
   - CocoaLumberjack/Core (3.7.4)
+  - SDWebImage/Core (5.13.4)
+  - SDWebImageSVGCoder (1.6.1):
+    - SDWebImage/Core (~> 5.6)
   - SVGKit (3.0.0):
     - CocoaLumberjack (~> 3.0)
   - SVProgressHUD (2.2.5)
@@ -11,6 +14,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
+  - SDWebImageSVGCoder
   - SVGKit
   - SVProgressHUD
   - SwiftChart (~> 1.0)
@@ -20,6 +24,8 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - CocoaLumberjack
+    - SDWebImage
+    - SDWebImageSVGCoder
     - SVGKit
     - SVProgressHUD
     - SwiftChart
@@ -28,11 +34,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
+  SDWebImage: e5cc87bf736e60f49592f307bdf9e157189298a3
+  SDWebImageSVGCoder: 6fc109f9c2a82ab44510fff410b88b1a6c271ee8
   SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 5921dcb94e4b67a18b4d4181e60faaa3aac04567
+PODFILE CHECKSUM: 06a196392a9d9ed7c66c91f11680b1b5d0c9e68d
 
 COCOAPODS: 1.11.3
