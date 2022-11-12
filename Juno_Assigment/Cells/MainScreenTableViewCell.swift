@@ -7,6 +7,7 @@
 
 import UIKit
 import SVGKit
+import SDWebImageSVGCoder
 
 
 class MainScreenTableViewCell: UITableViewCell {
@@ -21,15 +22,34 @@ class MainScreenTableViewCell: UITableViewCell {
     
     var cellCryptoPrice: CryptoPrices? {
         didSet {
-           // self.logoImageView.image = cellCryptoPrice?.logo
             self.titleLabel.text = cellCryptoPrice?.title
+          //  let svgImage = URL(string: cellCryptoPrice?.logo ?? "")
             self.currentPriceLabel.text = "$\(cellCryptoPrice?.current_price_in_usd ?? "")"
-            let svgImage = URL(string: cellCryptoPrice?.logo ?? "")
-            let data = try? Data(contentsOf: svgImage!)
-            let nameSvgImage: SVGKImage = SVGKImage(data: data)
             
+            
+            if cellCryptoPrice?.current_price_in_usd == "1.00" {
+                let minImage = URL(string: "file:///Users/pcs213/Downloads/line.svg")
+                let data1 = try? Data(contentsOf: minImage!)
+                let SvgImage: SVGKImage = SVGKImage(data: data1)
+                self.miniGraphImageView.image = SvgImage.uiImage
+            }
+            else {
+                let minImage = URL(string: "file:///Users/pcs213/Downloads/up%20down%20line.svg")
+                let data1 = try? Data(contentsOf: minImage!)
+                let SvgImage: SVGKImage = SVGKImage(data: data1)
+                self.miniGraphImageView.image = SvgImage.uiImage
+            }
+            let SVGCoder = SDImageSVGCoder.shared
+            SDImageCodersManager.shared.addCoder(SVGCoder)
+//             load SVG url
+//            let imageView: UIImageView = UIImageView()
+//            imageView.sd_setImage(with: svgImage!)
+//
+//            let data = try? Data(contentsOf: svgImage!)
+//            let nameSvgImage: SVGKImage = SVGKImage(data: data)
             DispatchQueue.main.async {
-                self.logoImageView.image = nameSvgImage.uiImage
+                self.logoImageView.sd_setImage(with: URL(string: "\(self.cellCryptoPrice?.logo ?? "")"))
+                
             }
         }
     }
