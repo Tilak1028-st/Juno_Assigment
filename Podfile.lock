@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.6.2)
+  - CocoaLumberjack (3.7.4):
+    - CocoaLumberjack/Core (= 3.7.4)
+  - CocoaLumberjack/Core (3.7.4)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
+  - SVProgressHUD (2.2.5)
+  - SwiftChart (1.0.1)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.5)
+  - SVGKit
+  - SVProgressHUD
+  - SwiftChart (~> 1.0)
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CocoaLumberjack
+    - SVGKit
+    - SVProgressHUD
+    - SwiftChart
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  CocoaLumberjack: 543c79c114dadc3b1aba95641d8738b06b05b646
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftChart: ba767a678d568a5ee22d419e146a0582865e1aff
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 5921dcb94e4b67a18b4d4181e60faaa3aac04567
+
+COCOAPODS: 1.11.3
