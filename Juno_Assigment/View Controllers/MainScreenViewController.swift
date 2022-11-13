@@ -7,6 +7,7 @@
 
 import UIKit
 import SVGKit
+import SDWebImageSVGCoder
 
 
 class MainScreenViewController: UIViewController {
