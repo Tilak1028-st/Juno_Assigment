@@ -89,6 +89,7 @@ class DetailScreenViewController: UIViewController {
         self.yourHoldingView.layer.borderColor = UIColor.gray.cgColor
         self.yourHoldingView.layer.cornerRadius = 10.0
         
+        self.hourButton.isSelected = true
         
         
         let imageAttachment = NSTextAttachment()
