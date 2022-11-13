@@ -23,9 +23,12 @@ class MainScreenTableViewCell: UITableViewCell {
     var cellCryptoPrice: CryptoPrices? {
         didSet {
             self.titleLabel.text = cellCryptoPrice?.title
-          //  let svgImage = URL(string: cellCryptoPrice?.logo ?? "")
             self.currentPriceLabel.text = "$\(cellCryptoPrice?.current_price_in_usd ?? "")"
+            let SVGCoder = SDImageSVGCoder.shared
+            SDImageCodersManager.shared.addCoder(SVGCoder)
             
+            // locoImageView
+            self.logoImageView.sd_setImage(with: URL(string: cellCryptoPrice?.logo ?? ""))
             
             if cellCryptoPrice?.current_price_in_usd == "1.00" {
                 let minImage = URL(string: "file:///Users/pcs213/Downloads/line.svg")
@@ -39,18 +42,6 @@ class MainScreenTableViewCell: UITableViewCell {
                 let SvgImage: SVGKImage = SVGKImage(data: data1)
                 self.miniGraphImageView.image = SvgImage.uiImage
             }
-            let SVGCoder = SDImageSVGCoder.shared
-            SDImageCodersManager.shared.addCoder(SVGCoder)
-//             load SVG url
-//            let imageView: UIImageView = UIImageView()
-//            imageView.sd_setImage(with: svgImage!)
-//
-//            let data = try? Data(contentsOf: svgImage!)
-//            let nameSvgImage: SVGKImage = SVGKImage(data: data)
-            DispatchQueue.main.async {
-                self.logoImageView.sd_setImage(with: URL(string: "\(self.cellCryptoPrice?.logo ?? "")"))
-                
-            }
         }
     }
     
@@ -60,12 +51,27 @@ class MainScreenTableViewCell: UITableViewCell {
         // Initialization code
         logoImageView.layer.cornerRadius = logoImageView.frame.height/2
         miniGraphImageView.layer.cornerRadius = miniGraphImageView.frame.height/2
+        setDataIntoPriceChangedLabel()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
+    
+    private func setDataIntoPriceChangedLabel() {
+        let imageAttachment = NSTextAttachment()
+        imageAttachment.image = UIImage(named:"green_price_change.png")
+        let imageOffsetY: CGFloat = -5.0
+        imageAttachment.bounds = CGRect(x: 0, y: imageOffsetY, width: imageAttachment.image!.size.width, height: imageAttachment.image!.size.height)
+        let attachmentString = NSAttributedString(attachment: imageAttachment)
+        let completeText = NSMutableAttributedString(string: "")
+        completeText.append(attachmentString)
+        let textAfterIcon = NSAttributedString(string: "0.00%")
+        completeText.append(textAfterIcon)
+        self.priceChangeLabel.textAlignment = .center
+        self.priceChangeLabel.attributedText = completeText
+    }
 }
