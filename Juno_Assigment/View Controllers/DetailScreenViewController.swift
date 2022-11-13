@@ -15,7 +15,7 @@ class DetailScreenViewController: UIViewController {
     
     //Outlets
     @IBOutlet private weak var currentPriceLabel: UILabel!
-    @IBOutlet private weak var bitCoinNameLabel: UILabel!
+    @IBOutlet  weak var bitCoinNameLabel: UILabel!
     @IBOutlet private weak var charView: UIView!
     @IBOutlet private weak var performanceLabel: UILabel!
     @IBOutlet private weak var coinImageView: UIImageView!
@@ -29,7 +29,7 @@ class DetailScreenViewController: UIViewController {
     @IBOutlet private weak var MonthButton: UIButton!
     @IBOutlet private weak var YearButton: UIButton!
     @IBOutlet private weak var AllButton: UIButton!
-    @IBOutlet weak var narBar: NavigationBar!
+    @IBOutlet private weak var narBar: NavigationBar!
     
     
     //Variables:
@@ -72,7 +72,8 @@ class DetailScreenViewController: UIViewController {
         setUpChart()
     }
     
-    // function to setup initial ui of detail screen
+    //MARK: function to setup initial ui of detail screen
+    
     private func setUpUI() {
         
         //setting navigation Bar
@@ -106,18 +107,15 @@ class DetailScreenViewController: UIViewController {
         
     }
     
+    //MARK: -> function to pop back on mainScreen
+    
     @objc func didTapOnBackButton()
     {
         self.navigationController?.popViewController(animated: true)
     }
     
     
-    @IBAction func didTapOnbackButton(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
-    }
-    
-    
-    //MARK: Function to set chart in detail screen
+    //MARK: -> Function to set chart in detail screen
     
     private func setUpChart() {
         graphPoints = [4, 2, 1, 4, 5, 3, 4,5,6,7,6,5,6, 8,9,10,7,6,5,4,2]
@@ -135,6 +133,7 @@ class DetailScreenViewController: UIViewController {
         charView.addSubview(chart)
     }
     
+    //MARK: ->  calls function when 1H button tap.
     
     @IBAction func didtapOn1HButton(_ sender: UIButton) {
         updateChartsDataForDifferentTime(timeGraphPoints: [4, 2, 1, 4, 5, 3, 4,5,6,7,6,5,6, 8,9,10,7,6,5,4,2])
@@ -153,6 +152,7 @@ class DetailScreenViewController: UIViewController {
         AllButton.isSelected = false
     }
     
+    //MARK: ->  calls function when 1D button tap.
     
     @IBAction func didtapOn1DButton(_ sender: UIButton) {
         updateChartsDataForDifferentTime(timeGraphPoints: [4, 2, 1, 4, 6, 7, 2, 3, 5, 9, 1, 2, 3, 4, 5, 6, 8, 9, 7])
@@ -170,7 +170,7 @@ class DetailScreenViewController: UIViewController {
         AllButton.isSelected = false
     }
     
-    
+    //MARK: ->  calls function when 1M button tap.
     
     @IBAction func didTapOn1MButton(_ sender: UIButton) {
         updateChartsDataForDifferentTime(timeGraphPoints: [4, 2, 1, 4, 5, 3, 4, 1, 8, 9 ,1, 3, 7, 1, 3,10, 2, 7,5, 8, 2])
@@ -188,6 +188,7 @@ class DetailScreenViewController: UIViewController {
         AllButton.isSelected = false
     }
     
+    //MARK: -> calls function when 1Y button tap.
     
     @IBAction func didTapOn1YButton(_ sender: UIButton) {
         updateChartsDataForDifferentTime(timeGraphPoints: [1, 3, 5, 4, 5, 8, 6, 8, 9, 1, 2, 3,6, 4, 1, 10, 7, 6, 2, 7, 4])
@@ -205,6 +206,7 @@ class DetailScreenViewController: UIViewController {
         AllButton.isSelected = false
     }
     
+    //MARK: -> calls function when All button tap.
     
     @IBAction func didTapOnAllButton(_ sender: UIButton) {
         updateChartsDataForDifferentTime(timeGraphPoints: [4, 2, 1, 1, 5, 3, 2,5,8,7,4,5,6, 2,9,10,7,6,7,9,2])
@@ -223,7 +225,7 @@ class DetailScreenViewController: UIViewController {
     }
     
     
-    //MARK: function to change graphs values for different 1H, 1H, 1M etc.
+    //MARK: -> Function to change graphs values for different 1H, 1H, 1M etc.
     
     private func updateChartsDataForDifferentTime(timeGraphPoints: [Double]) {
         DispatchQueue.main.async { [weak self] in

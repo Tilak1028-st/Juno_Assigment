@@ -9,12 +9,14 @@ import UIKit
 
 class NavigationBar: UIView
 {
-    
+    //Outlets
     @IBOutlet var backImageView: UIView!
     @IBOutlet weak var depositView: UIView!
     @IBOutlet weak var withdrawView: UIView!
     @IBOutlet var containerView: UIView!
     @IBOutlet weak var logoImageView: UIImageView!
+    
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         commitInit()

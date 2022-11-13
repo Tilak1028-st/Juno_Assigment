@@ -8,9 +8,9 @@
 import Foundation
 import UIKit
 import Alamofire
-import SwiftyJSON
 
-//Networking class from Api
+
+//MARK: -> Networking Class
 
 class CryptoNetworking: NSObject {
     

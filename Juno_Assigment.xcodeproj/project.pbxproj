@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8237CBC52920E809005FCC87 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CBC32920E809005FCC87 /* NavigationBar.swift */; };
+		8237CBC62920E809005FCC87 /* NavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8237CBC42920E809005FCC87 /* NavigationBar.xib */; };
+		8237CBC92920E844005FCC87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8237CBC82920E844005FCC87 /* Assets.xcassets */; };
+		8237CBCC2920E976005FCC87 /* ConstantString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CBCB2920E976005FCC87 /* ConstantString.swift */; };
+		8237CBD02920F3AC005FCC87 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CBCF2920F3AC005FCC87 /* NetworkTests.swift */; };
 		82CBFD14291EC25F008B535B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD13291EC25F008B535B /* AppDelegate.swift */; };
 		82CBFD16291EC25F008B535B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD15291EC25F008B535B /* SceneDelegate.swift */; };
 		82CBFD18291EC25F008B535B /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD17291EC25F008B535B /* MainScreenViewController.swift */; };
 		82CBFD1B291EC25F008B535B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CBFD19291EC25F008B535B /* Main.storyboard */; };
-		82CBFD1D291EC260008B535B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82CBFD1C291EC260008B535B /* Assets.xcassets */; };
 		82CBFD20291EC260008B535B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82CBFD1E291EC260008B535B /* LaunchScreen.storyboard */; };
-		82CBFD2B291EC261008B535B /* Juno_AssigmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD2A291EC261008B535B /* Juno_AssigmentTests.swift */; };
 		82CBFD35291EC261008B535B /* Juno_AssigmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD34291EC261008B535B /* Juno_AssigmentUITests.swift */; };
 		82CBFD37291EC261008B535B /* Juno_AssigmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD36291EC261008B535B /* Juno_AssigmentUITestsLaunchTests.swift */; };
 		82CBFD47291EC4D0008B535B /* DetailScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFD46291EC4D0008B535B /* DetailScreenViewController.swift */; };
@@ -51,16 +54,19 @@
 /* Begin PBXFileReference section */
 		4DC7901923194823003BA1E3 /* Pods_Juno_AssigmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Juno_AssigmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E08EE8CAD28A010DDA55492 /* Pods-Juno_Assigment-Juno_AssigmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Juno_Assigment-Juno_AssigmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Juno_Assigment-Juno_AssigmentUITests/Pods-Juno_Assigment-Juno_AssigmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8237CBC32920E809005FCC87 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		8237CBC42920E809005FCC87 /* NavigationBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationBar.xib; sourceTree = "<group>"; };
+		8237CBC82920E844005FCC87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8237CBCB2920E976005FCC87 /* ConstantString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantString.swift; sourceTree = "<group>"; };
+		8237CBCF2920F3AC005FCC87 /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
 		82CBFD10291EC25F008B535B /* Juno_Assigment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Juno_Assigment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CBFD13291EC25F008B535B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82CBFD15291EC25F008B535B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		82CBFD17291EC25F008B535B /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		82CBFD1A291EC25F008B535B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		82CBFD1C291EC260008B535B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82CBFD1F291EC260008B535B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82CBFD21291EC261008B535B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82CBFD26291EC261008B535B /* Juno_AssigmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Juno_AssigmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82CBFD2A291EC261008B535B /* Juno_AssigmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juno_AssigmentTests.swift; sourceTree = "<group>"; };
 		82CBFD30291EC261008B535B /* Juno_AssigmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Juno_AssigmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82CBFD34291EC261008B535B /* Juno_AssigmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juno_AssigmentUITests.swift; sourceTree = "<group>"; };
 		82CBFD36291EC261008B535B /* Juno_AssigmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juno_AssigmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -121,6 +127,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8237CBC22920E809005FCC87 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				8237CBC32920E809005FCC87 /* NavigationBar.swift */,
+				8237CBC42920E809005FCC87 /* NavigationBar.xib */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		8237CBC72920E844005FCC87 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8237CBC82920E844005FCC87 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8237CBCA2920E953005FCC87 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				8237CBCB2920E976005FCC87 /* ConstantString.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		82CBFD07291EC25F008B535B = {
 			isa = PBXGroup;
 			children = (
@@ -148,12 +179,13 @@
 			children = (
 				82CBFD13291EC25F008B535B /* AppDelegate.swift */,
 				82CBFD15291EC25F008B535B /* SceneDelegate.swift */,
+				8237CBCA2920E953005FCC87 /* Constant */,
 				82CBFD45291EC451008B535B /* Model */,
 				82CBFD57291ED239008B535B /* ViewModel */,
 				82CBFD43291EC3E3008B535B /* View Controllers */,
 				82CBFD5A291ED7F0008B535B /* Cells */,
 				82CBFD44291EC414008B535B /* Storyboards */,
-				82CBFD1C291EC260008B535B /* Assets.xcassets */,
+				8237CBC72920E844005FCC87 /* Assets */,
 				82CBFD21291EC261008B535B /* Info.plist */,
 			);
 			path = Juno_Assigment;
@@ -162,7 +194,7 @@
 		82CBFD29291EC261008B535B /* Juno_AssigmentTests */ = {
 			isa = PBXGroup;
 			children = (
-				82CBFD2A291EC261008B535B /* Juno_AssigmentTests.swift */,
+				8237CBCF2920F3AC005FCC87 /* NetworkTests.swift */,
 			);
 			path = Juno_AssigmentTests;
 			sourceTree = "<group>";
@@ -234,6 +266,7 @@
 		82CBFD5A291ED7F0008B535B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				8237CBC22920E809005FCC87 /* NavigationBar */,
 				82CBFD5B291ED822008B535B /* MainScreenTableViewCell.swift */,
 				82CBFD5C291ED822008B535B /* MainScreenTableViewCell.xib */,
 			);
@@ -364,8 +397,9 @@
 			files = (
 				82CBFD5E291ED822008B535B /* MainScreenTableViewCell.xib in Resources */,
 				82CBFD20291EC260008B535B /* LaunchScreen.storyboard in Resources */,
-				82CBFD1D291EC260008B535B /* Assets.xcassets in Resources */,
 				82CBFD1B291EC25F008B535B /* Main.storyboard in Resources */,
+				8237CBC92920E844005FCC87 /* Assets.xcassets in Resources */,
+				8237CBC62920E809005FCC87 /* NavigationBar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -497,9 +531,11 @@
 				82CBFD59291ED25A008B535B /* MainScreenViewModel.swift in Sources */,
 				82CBFD52291EC961008B535B /* AllTransactions.swift in Sources */,
 				82CBFD4E291EC8EA008B535B /* YourCryptoHoldings.swift in Sources */,
+				8237CBC52920E809005FCC87 /* NavigationBar.swift in Sources */,
 				82CBFD18291EC25F008B535B /* MainScreenViewController.swift in Sources */,
 				82CBFD14291EC25F008B535B /* AppDelegate.swift in Sources */,
 				82CBFD50291EC920008B535B /* CryptoPrices.swift in Sources */,
+				8237CBCC2920E976005FCC87 /* ConstantString.swift in Sources */,
 				82CBFD47291EC4D0008B535B /* DetailScreenViewController.swift in Sources */,
 				82CBFD5D291ED822008B535B /* MainScreenTableViewCell.swift in Sources */,
 				82CBFD49291EC81F008B535B /* CryptoBalance.swift in Sources */,
@@ -512,7 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82CBFD2B291EC261008B535B /* Juno_AssigmentTests.swift in Sources */,
+				8237CBD02920F3AC005FCC87 /* NetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,8 +27,6 @@ class MainScreenTableViewCell: UITableViewCell {
             let SVGCoder = SDImageSVGCoder.shared
             SDImageCodersManager.shared.addCoder(SVGCoder)
             
-            // locoImageView
-            self.logoImageView.sd_setImage(with: URL(string: cellCryptoPrice?.logo ?? ""))
             
             if cellCryptoPrice?.current_price_in_usd == "1.00" {
                 let minImage = URL(string: "file:///Users/pcs213/Downloads/line.svg")
@@ -60,6 +58,7 @@ class MainScreenTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //MARK: -> Function to change price
     
     private func setDataIntoPriceChangedLabel() {
         let imageAttachment = NSTextAttachment()
