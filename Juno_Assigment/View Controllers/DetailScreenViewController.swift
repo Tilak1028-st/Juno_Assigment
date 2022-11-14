@@ -7,7 +7,7 @@
 
 import UIKit
 import SwiftChart
-import SVGKit
+import SDWebImageSVGCoder
 
 
 
@@ -36,17 +36,14 @@ class DetailScreenViewController: UIViewController {
     private var graphPoints: [Double] = []
     private let chart = Chart(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 0.40 * UIScreen.main.bounds.height))
     private var series = ChartSeries([])
-    private var svgImage: SVGKImage = SVGKImage()
     
     var yourHolding: YourCryptoHoldings? {
         didSet{
             let svgImage = URL(string: yourHolding?.logo ?? "")
-            let data = try? Data(contentsOf: svgImage!)
-            let nameSvgImage: SVGKImage = SVGKImage(data: data)
             
             DispatchQueue.main.async {
-                self.coinImageView.image = nameSvgImage.uiImage
-                self.narBar.logoImageView.image = nameSvgImage.uiImage
+                self.coinImageView.sd_setImage(with: svgImage)
+                self.narBar.logoImageView.sd_setImage(with: svgImage)
                 self.availabelCryptoLabel.text = "Available \(self.yourHolding?.title ?? "")"
                 self.crptoValueLabel.text = "\(self.yourHolding?.current_bal_in_usd ?? "") \(self.yourHolding?.title ?? "")"
                 self.codeLabel?.text = "jkfnnfnn nigioiog"
